@@ -1,0 +1,31 @@
+<header>
+  <div class="logo">
+    <img src="#" alt="">
+    <a href="" class="header__logo"></a>
+  </div>
+
+  <nav  [ngClass]="{'show': mostrar, 'nav': !mostrar}" class="nav" id="nav-menu" >
+
+    <ion-icon  (click)="mostrarMenu()" name="close-outline" class="header__close" id="close-menu"></ion-icon>
+
+    <!-- [ngClass]="{'header__close': cerrar, 'show': !cerrar}" (click)="cerrarMenu()"  -->
+    <ul  class="nav__list">
+      <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+      <li class="nav__item"><a href="#" class="nav__link">About</a></li>
+      <li class="nav__item"><a href="#" class="nav__link">Skills</a></li>
+      <li class="nav__item"><a href="#" class="nav__link">Portafolio</a></li>
+      <li class="nav__item"><a href="#" class="nav__link">Contactame</a></li>
+    </ul>
+
+  </nav>
+  <!-- <p [ngClass]="{'rojo': mostrar, 'azul': !mostrar}">
+    Hola
+</p>
+<button (click)="mostrarMenu()">Cambiar clase</button> -->
+
+  <ion-icon (click)="mostrarMenu()"  name="menu-outline" class="header__toggle" id="toggle-menu"></ion-icon>
+
+
+</header>
+
+
