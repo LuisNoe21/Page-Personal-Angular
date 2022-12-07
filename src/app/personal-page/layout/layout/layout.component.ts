@@ -1,6 +1,4 @@
-// import * as icons from 'ionicons/icons';
 import { Component } from '@angular/core';
-// import { heroUsers } from '@ng-icons/heroicons/outline';
 
 @Component({
   selector: 'app-layout',
@@ -9,7 +7,6 @@ import { Component } from '@angular/core';
 })
 export class LayoutComponent {
   mostrar = false;
-
   mostrarMenu() {
     this.mostrar = !this.mostrar;
   }
